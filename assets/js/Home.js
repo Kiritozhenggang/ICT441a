@@ -1,4 +1,4 @@
-
+function readmore(){ 
 var input=prompt("Please choose your content 'student'or'parent'")
     if (input == "student"){
      window.location.href="https://kiritozhenggang.github.io/ICT441a/" 
@@ -8,3 +8,4 @@ var input=prompt("Please choose your content 'student'or'parent'")
     {
         window.location.href="https://kiritozhenggang.github.io/ICT441a/Course.html" 
     }
+}

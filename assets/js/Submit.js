@@ -38,7 +38,7 @@ function Validate()
         document.getElementById("fn").innerHTML = "First Name: Please enter letters.";
         isValid = false;
     } else {
-        document.getElementById("fn").innerHTML = "First Name:PASS";document.getElementById("fn").style.color = "Green";}
+        document.getElementById("fn").innerHTML = "First Name:Right";document.getElementById("fn").style.color = "Blue";}
 
     // Detection lastName
     if (lastNameValue === '') {
@@ -47,7 +47,7 @@ function Validate()
     } else if (!nameRegex.test(lastNameValue)) {
         document.getElementById("ln").innerHTML = "Last Name: Please enter letters.";
         isValid = false;
-    } else {document.getElementById("ln").innerHTML = "Last Name:PASS";document.getElementById("ln").style.color = "Green";}
+    } else {document.getElementById("ln").innerHTML = "Last Name:Right";document.getElementById("ln").style.color = "Blue";}
     
 
     // Detection phone
@@ -57,7 +57,7 @@ function Validate()
     } else if (!phoneRegex.test(phoneValue)) {
         document.getElementById("pn").innerHTML =('Phone Number: Invalid input for phone number.');
         isValid = false;
-    } else {document.getElementById("pn").innerHTML ='Phone Number: PASS';document.getElementById("pn").style.color = "Green";}
+    } else {document.getElementById("pn").innerHTML ='Phone Number: Right';document.getElementById("pn").style.color = "Blue";}
 
     // Detection gender
     if (genderValue === '') {
@@ -66,7 +66,7 @@ function Validate()
     } else if (!genderRegex.test(genderValue)) {
         document.getElementById("gd").innerHTML = 'Invalid input for gender.';
         isValid = false;
-    } else {document.getElementById("gd").innerHTML = 'Gender: PASS';document.getElementById("gd").style.color = "Green";}
+    } else {document.getElementById("gd").innerHTML = 'Gender:Right ';document.getElementById("gd").style.color = "Blue";}
 
     // Detection enquiry
     if (enquiryValue === '') {
@@ -75,6 +75,6 @@ function Validate()
     } else if (enquiryValue.split(/\s+/).length > 150) {
         document.getElementById("eq").innerHTML = 'Enquiry: Your enquiry should be limited to 150 words.';
         isValid = false;
-    } else {document.getElementById("eq").innerHTML = 'Enquiry: PASS';document.getElementById("eq").style.color = "Green";}
+    } else {document.getElementById("eq").innerHTML = 'Enquiry: Right';document.getElementById("eq").style.color = "Blue";}
 
 }
